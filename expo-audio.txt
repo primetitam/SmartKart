@@ -1,0 +1,25 @@
+# Smartcart — expo-audio (feature de áudio)
+
+## Por que este arquivo
+Controle de dependência e configuração da feature de áudio. Inalterável sem este doc.
+
+## Versão da dependência (obrigatório)
+- package.json: "expo-audio": "~57.0.4"
+- A versão pedida bore "^2.0.3" NAO EXISTE no registry npm (erro ETARGET).
+- SDK 57 exige a linha expo-audio ~57.0.x (confirmado em bundledNativeModules.json).
+- REGRA: nunca colocar "2.x"; sempre alinhar ao SDK (npx expo install expo-audio).
+
+## Obrigatório (esta feat)
+- [X] Dependência adicionada em package.json (expo-audio ~57.0.4).
+- [X] npm install OK (lock atualizado com expo-audio 57.0.4).
+- [ ] Importar e usar o módulo (ex: feedback/playback de áudio nas rotas).
+- [ ] Expo Go SDK 57 já inclui expo-audio para preview.
+- [ ] Build nativo (standalone/dev): rodar "npx expo prebuild" e build
+      (expo-audio e' modulo nativo; config additional no projeto nativo).
+- [ ] Se precisar de microfone/gravacao, manter permissao RECORD_AUDIO no app.json
+      (ja presente) e NSMicrophoneUsageDescription no ios.infoPlist (ja presente).
+
+## Notas
+- expo-speech-recognition (voz para adicionar itens) ja esta instalado
+  (^57.0.0) e nao usa expo-audio.
+- expo-audio aplica-se a reproducao/feedback sonoro, nao a reconhecimento de fala.

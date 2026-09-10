@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Smartcart",
+    "slug": "Smartcart",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.smartcart.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "O SmartCart usa o microfone para adicionar itens na lista por voz.",
+        "NSSpeechRecognitionUsageDescription": "O SmartCart reconhece sua fala para adicionar itens na lista."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.smartcart.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-asset",
+      "expo-localization",
+      "expo-font",
+      "expo-speech-recognition"
+    ],
+    "scheme": "smartcart",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "57c1abf4-a3f0-4960-b19a-78631db5c2e1"
+      }
+    },
+    "owner": "primetitan"
+  }
+}
